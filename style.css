@@ -1,0 +1,14 @@
+body {
+    background-color: gray;
+}
+header {
+    display: grid;
+    grid-template-rows: 100px;
+    display: center;
+    text-align: center;
+    background-color: rgb(19, 68, 203);
+}
+img {
+    display: grid;
+    
+}
