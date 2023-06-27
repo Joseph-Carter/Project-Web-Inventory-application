@@ -2,6 +2,43 @@ body {
     background-color: gray;
     display: grid;
 }
+.main-head { 
+    grid-area: header;
+}
+.main-footer {
+    grid-area: footer;
+}
+.wrapper {
+    grid-area: sidebar;
+}
+.bethesda {
+    grid-area: content;
+}
+.form {
+    grid-area: form;
+}
+
+body {
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+        "header"
+        "footer"
+        "content"
+        "sidebar"
+        "from";
+}
+ @media (min-width: 500px) {
+    .wrapper {
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas: 
+        "header header"
+        "form form"
+        "sidebar content"
+        "footer footer" ;
+    }
+ }
+
 header {
     display: grid;
     grid-template-rows: 100px;

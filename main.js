@@ -13,6 +13,7 @@ errorMessage.style.backgroundColor = 'Red'
 errorMessage.style.color = 'White'
 
 const form = wrapper.querySelector('form')
+form.classList.add('form')
 
 const button = document.createElement('button')
 button.textContent = 'Remove'
