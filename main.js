@@ -1,12 +1,12 @@
 const wrapper = document.getElementById('wrapper')
 const Img = wrapper.querySelector('.bethesda')
-const stars = wrapper.querySelector('.stars')
+const money = wrapper.querySelector('.money')
 let input = document.createElement('input')
 let body = document.querySelector('body')
 
 Image.src = 'https://exputer.com/wp-content/uploads/2023/06/Starfield_Premium_VanityImage_mobile.jpg'
 
-stars.textContent = '$99.99'
+money.textContent = '$99.99'
 
 let errorMessage = document.createElement('p')
 errorMessage.style.backgroundColor = 'Red'
