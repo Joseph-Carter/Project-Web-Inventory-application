@@ -8,8 +8,8 @@ body {
         grid-template-areas:
             "header header header"
             "image title form"
-            "image description ."
-            "image price .";
+            "image description form"
+            "image price form";
     }
 
 
@@ -28,7 +28,7 @@ p {
 .money {
     grid-area: price;
 }
-.form {
+.input {
     grid-area: form;
 }
 h2 {

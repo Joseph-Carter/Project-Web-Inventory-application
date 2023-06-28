@@ -21,14 +21,14 @@ button.style.backgroundColor = 'Red'
 button.style.color = 'White'
 button.type = 'Remove'
 
-
 // form.appendChild(button)
 form.append(input)
+input.classList.add('input')
 input.type = 'text'
 input.placeholder = 'Name of game'
 input.name = 'Game'
 
-body.appendChild(form)
+
 body.appendChild(errorMessage)
 
 let ul = document.createElement('ul')
