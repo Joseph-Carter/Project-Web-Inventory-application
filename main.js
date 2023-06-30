@@ -14,7 +14,8 @@ errorMessage.style.color = 'White'
 
 const form = wrapper.querySelector('form')
 form.classList.add('form')
-const priceForm = document.createElement('form')
+const priceForm = document.createElement('input')
+priceForm.placeholder = "Enter Price"
 const dropDown = document.createElement('button')
 dropDown.classList.add('dropbtn')
 dropDown.textContent = 'Dropdown'
@@ -22,16 +23,18 @@ const forDropdown = document.createElement('div')
 forDropdown.classList.add('dropdown-content')
 dropDown.append(forDropdown)
 //maybe loop here for anchor tag for dropdown options
-const description = document.createElement('form')
+const description = document.createElement('input')
+description.placeholder = "Description of game."
 
 
-const button = document.createElement('button')
+
+const button = document.querySelector('button')
 button.textContent = 'Submit'
-button.style.backgroundColor = 'Red'
-button.style.color = 'White'
-button.type = 'button'
+
 
 form.append(input)
+form.append(description)
+form.append(priceForm)
 form.append(button)
 input.classList.add('input')
 input.type = 'text'
