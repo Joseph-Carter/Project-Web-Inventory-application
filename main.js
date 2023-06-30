@@ -14,15 +14,25 @@ errorMessage.style.color = 'White'
 
 const form = wrapper.querySelector('form')
 form.classList.add('form')
+const priceForm = document.createElement('form')
+const dropDown = document.createElement('button')
+dropDown.classList.add('dropbtn')
+dropDown.textContent = 'Dropdown'
+const forDropdown = document.createElement('div')
+forDropdown.classList.add('dropdown-content')
+dropDown.append(forDropdown)
+//maybe loop here for anchor tag for dropdown options
+const description = document.createElement('form')
+
 
 const button = document.createElement('button')
-button.textContent = 'Remove'
+button.textContent = 'Submit'
 button.style.backgroundColor = 'Red'
 button.style.color = 'White'
-button.type = 'Remove'
+button.type = 'button'
 
-// form.appendChild(button)
 form.append(input)
+form.append(button)
 input.classList.add('input')
 input.type = 'text'
 input.placeholder = 'Name of game'
