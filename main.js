@@ -25,14 +25,15 @@ dropDown.append(forDropdown)
 //maybe loop here for anchor tag for dropdown options
 const description = document.createElement('input')
 description.placeholder = "Description of game."
-
+description.classList.add('description')
+const label = wrapper.querySelector('label')
 
 
 const button = document.querySelector('button')
 button.textContent = 'Submit'
 
 
-form.append(input)
+label.append(input)
 form.append(description)
 form.append(priceForm)
 form.append(button)
