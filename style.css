@@ -8,7 +8,7 @@ body {
         grid-template-areas:
             "header header header"
             "image title form"
-            "image description form"
+            "image company form"
             "image price form";
     }
 
@@ -22,8 +22,8 @@ img.bethesda {
     grid-area: image;
     width: 700px;
 }  
-p {
-    grid-area: description;
+h3 {
+    grid-area: company;
 }
 .money {
     grid-area: price;
