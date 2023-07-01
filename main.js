@@ -10,11 +10,11 @@
         let errMessages = [];
         const formData = {
             gameTitle: event.target.gameTitle.value,
+            gameImage: event.target.imageUrl.value,
             companyTitle: event.target.companyTitle.value,
             price: event.target.price.value,
             stockOptions: event.target.stockOptions.value,
         };
-        console.log(formData)
         //fires off error message if any field of the form is not filled out
         for (let data in formData) {
             if (!formData[data]) {
@@ -29,14 +29,38 @@
         }
         // Checking to see if numbers were actually entered and not characters
         if(!/^["|']{0,1}[-]{0,1}\d{0,}(\.{0,1}\d+)["|']{0,1}$/.test(formData.price) && !/\d+/.test(formData.price)){
-            errMessages.push("Character's not accpted please entre real numbers.");
+            errMessages.push("Character's not accepted please entre real numbers.");
             event.target.price.value = "";
         }
-        console.log(errorDisplay, errMessages)
         errMessages.forEach((error) => {
-            console.log('creating error')
-            let errorListItem = document.createElement('li');
-            errorListItem.innerText = error
-            errorDisplay.append(errorListItem);
+            if(error) {
+                let errorListItem = document.createElement('li');
+                errorListItem.innerText = error
+                errorDisplay.append(errorListItem);
+            } else {
+                let errorListItem = document.createElement('li');
+                errorListItem.innerText = ""
+                errorDisplay.append(errorListItem);
+            }
         })
+        //creates listed items
+        const gameList = document.querySelector('#gameHolder');
+        const formListItem = document.createElement('li')
+        const gameNameTitle = document.createElement('h2');
+        const gameImg = document.createElement('img');
+        const gameCompany = document.createElement('h3');
+        const gameContainer = document.createElement('div');
+        let gameStock = document.querySelector('#stockOptions')
+        const priceOfGame = document.createElement('span')
+        gameImg.src = event.target.imageUrl.value
+        // gameContainer.classList.add('')
+        formListItem.classList.add('product')
+        gameNameTitle.textContent = event.target.gameTitle.value;
+        priceOfGame.textContent = event.target.price.value;
+        gameCompany.textContent = event.target.companyTitle.value;
+        gameStock = event.target.stockOptions.value;
+        gameContainer.append(gameNameTitle, gameImg, priceOfGame, gameCompany, gameStock);
+        formListItem.append(gameContainer);
+        gameList.append(formListItem);
+    form.reset();
     })
