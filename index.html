@@ -15,21 +15,21 @@
         <h3>Bethesda Game Studio</h3>
         <span class="money" content="99.99"> $99.99</span>
         <form class="form" name="forms" id="forms">
-            <label>Game</label>
+            <label for="game_title">Game</label>
             <br>
             <input type="text" id="gameNameInput" name="gameName" placeholder="Enter game name" required><br>
-            <label>Comapny</label><br>
+            <label for="company_title">Comapny</label><br>
             <input type="text" id="companyNameInput" name="companyName" placeholder="Enter company name" required><br>
-            <label>Image URL</label><br>
+            <label for="url">Image URL</label><br>
             <input type="text" id="imageUrlInput" name="imageUrl" placeholder="Enter the image URL" required><br>
-            <label>Price</label><br>
+            <label for="price">Price</label><br>
             <input type="number" id="priceInput" name="price" placeholder="0.00" required><br>
-            <label>Stock</label><br>
+            <label for="stock_options">Stock</label><br>
             <select name="stock" id="stock">
                 <option value="inStock">In Stock</option>
                 <option value="outOfStock">Out of Stock</option>
-            </select>
-            <br>
+            </select><br>
+            <p class="error" id="errorMessage" style="display: none;" ></p>
             <button type="submit">submit</button>
         </form>
         <footer class="main-footer"></footer>
