@@ -14,22 +14,23 @@
         <img class="bethesda" src="https://exputer.com/wp-content/uploads/2023/06/Starfield_Premium_VanityImage_mobile.jpg">
         <h3>Bethesda Game Studio</h3>
         <span class="money" content="99.99"> $99.99</span>
-        <form class="form" name="forms" id="forms">
+        <form class="form" id="form">
             <label for="gameTitle">Game</label>
             <br>
-            <input type="text" id="gameNameInput" name="gameName" placeholder="Enter game name"><br>
+            <input type="text" id="gameTitle" name="gameName" placeholder="Enter game name"><br>
             <label for="companyTitle">Comapny</label><br>
-            <input type="text" id="companyNameInput" name="companyName" placeholder="Enter company name"><br>
+            <input type="text" id="companyTitle" name="companyName" placeholder="Enter company name"><br>
             <label for="url">Image URL</label><br>
-            <input type="text" id="imageUrlInput" name="imageUrl" placeholder="Enter the image URL"><br>
+            <input type="text" id="url" name="imageUrl" placeholder="Enter the image URL"><br>
             <label for="price">Price</label><br>
-            <input type="text" id="priceInput" name="price" placeholder="0.00"><br>
+            <input type="text" id="price" name="price" placeholder="0.00"><br>
             <label for="stockOptions">Stock</label><br>
-            <select name="stock" id="stock">
+            <select name="stock" id="stockOptions">
                 <option value="inStock">In Stock</option>
                 <option value="outOfStock">Out of Stock</option>
             </select><br>
-            <p class="error" id="errorMessage" style="display: none;" ></p>
+            <ul class="error" id="errorMessage">
+            </ul>
             <button type="submit">submit</button>
         </form>
         <footer class="main-footer"></footer>
