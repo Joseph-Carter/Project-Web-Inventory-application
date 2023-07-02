@@ -148,10 +148,26 @@ body {
     font-size: 16px;
     font-weight: bold;
 }
-.gameForm button:first-of-type {
+.gameForm #reset {
+    margin: 0 10px;
+    display: flex;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    width: 130px;
+    cursor: pointer;
+    height: 50px;
+    transition: all .5s ease;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+.gameForm #reset:first-of-type {
     background-color: rgb(60, 60, 60);
 }
-.gameForm button:first-of-type:hover {
+.gameForm #reset:first-of-type:hover {
     background-color: rgb(108, 107, 107);
 }
 .gameForm button:last-of-type {
