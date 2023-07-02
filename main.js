@@ -4,7 +4,7 @@
     form.addEventListener('submit', (event) => {
         event.preventDefault();
         // create varibles
-        const className = ["gameTitle", "companyTitle", "price", "stockOptions"];
+        const className = ["gameTitle", "companyTitle", "price", "stockOptions, removeButton"];
         //grab error message
         const errorDisplay = document.querySelector("#errorMessage");
         let errMessages = [];
@@ -33,15 +33,9 @@
             event.target.price.value = "";
         }
         errMessages.forEach((error) => {
-            if(error) {
                 let errorListItem = document.createElement('li');
                 errorListItem.innerText = error
                 errorDisplay.append(errorListItem);
-            } else {
-                let errorListItem = document.createElement('li');
-                errorListItem.innerText = ""
-                errorDisplay.append(errorListItem);
-            }
         })
         //creates listed items
         const gameList = document.querySelector('#gameHolder');
@@ -50,17 +44,18 @@
         const gameImg = document.createElement('img');
         const gameCompany = document.createElement('h3');
         const gameContainer = document.createElement('div');
+        const removeButton = document.createElement('button')
         let gameStock = document.querySelector('#stockOptions')
         const priceOfGame = document.createElement('span')
         gameImg.src = event.target.imageUrl.value
-        // gameContainer.classList.add('')
         formListItem.classList.add('product')
+        removeButton.type = 'remove'
         gameNameTitle.textContent = event.target.gameTitle.value;
         priceOfGame.textContent = event.target.price.value;
         gameCompany.textContent = event.target.companyTitle.value;
         gameStock = event.target.stockOptions.value;
-        gameContainer.append(gameNameTitle, gameImg, priceOfGame, gameCompany, gameStock);
+        gameContainer.append(gameNameTitle, gameImg, priceOfGame, gameCompany, gameStock, removeButton);
         formListItem.append(gameContainer);
         gameList.append(formListItem);
-    form.reset();
+    
     })

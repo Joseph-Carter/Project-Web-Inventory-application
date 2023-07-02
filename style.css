@@ -62,12 +62,30 @@ body {
 
 
 .main-head {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     grid-area: header;
-    height: 200px;
+    height: 70px;
     text-align: center;
-    background-image: url(./assets/raychan-jrNY1BZhnJg-unsplash.jpg);
+    background-image: url(./assets/raychan.jpg);
     background-size: cover;
-    transform: scaleY(-1);
+    /* transform: rotate(180deg); */
+}
+.main-head > img {
+    margin-left: 10px;
+    background-image: url(./assets/cosmic-joes.png);
+    background-size: cover;
+    height: 70px;
+
+}
+.main-head > .iconUser {
+    margin-left: 1180px;
+    background-image: url(./assets/Usericon.png);
+    background-size: cover;
+    height: 50px;
+    border: solid 5px white;
+    border-radius: 30px;
 }
 #gameHolder > li img{
     width: 700px;
