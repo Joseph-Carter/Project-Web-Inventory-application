@@ -11,11 +11,11 @@ The home page of Cosmics Joe's displays a list of current games available for pu
 
 ### 2. User-Friendly Interface
 
-The website has been designed with a clean and user-friendly interface. The main navigation is located at the top of the page, allowing users to access different sections of the website easily. The header section features the Cosmics Joe's logo and a personalized greeting with the user's name. This creates a personalized experience for each user.
+The website has been designed with a clean and user-friendly interface. The header section features the Cosmics Joe's logo and a personalized greeting with the user's name. This creates a personalized experience for each user.
 
 ### 3. Adding a New Game
 
-Users can add a new game to the collection by filling out a form provided on the website. The form prompts users to enter the game title, company name, an image URL, price, and stock status. Once the form is submitted, the game details are validated, and if successful, the new game is added to the list of available games on the home page.
+Users can add a new game to the collection by filling out a form provided on the website. The form prompts users to enter the game title, company name, an image URL, price, and stock status. Once the form is submitted, the game details are validated, and if successful, the new game is added to the list of available games on the home page. There is currently only one game that is continiously on sell and permenant to the website, which gives the ability to change stack availabiltiy, any other game added to the site when out of stock can be removed.
 
 ### 4. Managing Stock Status
 
@@ -27,4 +27,4 @@ The website includes error handling to ensure that users provide valid informati
 
 ---
 
-Enjoy exploring and adding games to your collection at Cosmics Joe's! Feel free to provide feedback or contact us if you have any questions or concerns.
+Enjoy exploring and adding games to your collection at Cosmics Joe's! Feel free to provide feedback.
