@@ -6,29 +6,37 @@
     <link rel="stylesheet" href="style.css" />
     <script defer src="main.js"></script>
     <title>Cosmics Joe's</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Concert+One&family=MuseoModerno:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="wrapper">
         <nav class="main-head">
             <img src="./assets/cosmic-joes.png"/> 
-            <img class="iconUser" src="./assets/Usericon.png"/>
-            
+            <div class="iconUser">
+                <p>Hi, Gamerguy819!</p>
+                <img src="./assets/Usericon.png"/>
+            </div>
         </nav>
         <ul id="gameHolder">
+            <h1>Current Games</h1>
             <li>
                 <div>
                     <h2>Starfield</h2>
                     <img class="bethesda" src="https://exputer.com/wp-content/uploads/2023/06/Starfield_Premium_VanityImage_mobile.jpg">
                     <h3>Bethesda Game Studio</h3>
-                    <span class="money" content="99.99"> $99.99</span>
+                    <p class="money" content="99.99"> $99.99</p>
+                    <p>In Stock</p><button>Change Stock Status</button>
                 </div>
             </li>
         </ul>
         <form class="gameForm" id="form">
+            <h2>Add A New Game</h2>
             <label for="gameTitle">Game</label>
             <br>
             <input type="text" id="gameTitle" name="gameName" style="width: 300px" placeholder="Enter game name"><br>
-            <label for="companyTitle">Comapny</label><br>
+            <label for="companyTitle">Company</label><br>
             <input type="text" id="companyTitle" name="companyName" style="width: 300px" placeholder="Enter company name"><br>
             <label for="imageUrl">Image URL</label><br>
             <input type="text" id="imageUrl" name="imageUrl" style="width: 300px" placeholder="Enter the image URL"><br>
@@ -36,12 +44,14 @@
             <input type="text" id="price" name="price" style="width: 45px" placeholder="$0.00"><br>
             <label for="stockOptions">Stock</label><br>
             <select name="stock" id="stockOptions" style="width: 310px">
-                <option value="inStock">In Stock</option>
-                <option value="outOfStock">Out of Stock</option>
+                <option value="In Stock">In Stock</option>
+                <option value="Out Of Stock">Out of Stock</option>
             </select><br>
             <ul class="error" id="errorMessage"></ul>
-            <input type="reset" value="Reset"/>
-            <button type="submit">submit</button>
+            <div class="formButtons">
+                <button value="Reset">Reset</button>
+                <button type="submit">Submit</button>
+            </div>
         </form>
         <footer class="main-footer"></footer>
     </div>
